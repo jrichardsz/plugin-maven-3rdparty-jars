@@ -1,3 +1,17 @@
+https://www.maestrodev.com/better-builds-with-maven/resources-for-plugin-developers/mojo-parameter-expressions/
+http://brettporter.wordpress.com/2010/10/05/creating-a-custom-build-extension-for-maven-3-0/
+http://www.javabeat.net/writing-a-custom-plugin-for-maven/#
+http://www.sw-engineering-candies.com/blog-1/howtowriteacustompluginformaventocountlinesofcode
+http://www.avajava.com/tutorials/lessons/how-do-i-create-a-hello-world-goal-for-a-maven-plugin.html?page=2
+http://maven.apache.org/guides/plugin/guide-java-plugin-development.html
+http://www.avajava.com/tutorials/lessons/how-do-i-attach-a-plugin-goal-to-a-particular-phase-of-a-maven-lifecycle.html
+http://stackoverflow.com/questions/6716051/passing-parameters-to-custom-lifecycle-from-a-mojo
+http://books.sonatype.com/mvnref-book/reference/writing-plugins-sect-custom-plugin.html
+https://www.maestrodev.com/better-builds-with-maven/developing-custom-maven-plugins/advanced-mojo-development/
+https://www.maestrodev.com/better-builds-with-maven/resources-for-plugin-developers/mojo-parameter-expressions/
+http://olamy.blogspot.fr/2012/05/java5-annotations-support-for-maven.html
+http://docs.codehaus.org/display/GMAVEN/Implementing+Maven+Plugins
+
 org.jrichardsz.plugins.maven
 maven-3rdparty-jars-plugin
 1.0.0
