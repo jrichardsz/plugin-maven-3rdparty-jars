@@ -1,0 +1,112 @@
+org.jrichardsz.plugins.maven
+maven-3rdparty-jars-plugin
+1.0.0
+maven-plugin
+
+
+mvn org.jrichardsz.plugins.maven:3rdparty-jars-maven-plugin:1.0-SNAPSHOT:installjars
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.javabeat.maven</groupId>
+  <artifactId>environment-info</artifactId>
+  <packaging>maven-plugin</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>environment-info Maven Mojo</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-plugin-api</artifactId>
+      <version>2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+  
+    <modelVersion>4.0.0</modelVersion>
+  <groupId>org.jrichardsz.plugins.maven</groupId>
+  <artifactId>3rdparty-jars-maven-plugin</artifactId>
+  <packaging>maven-plugin</packaging>
+  <version>1.0.0</version>
+  <name>maven-3rdparty-jars-plugin Maven Mojo</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-plugin-api</artifactId>
+      <version>2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+  <plugin>
+		<groupId>com.maventest</groupId>
+		<artifactId>maven-howdy-plugin</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<executions>
+			<execution>
+				<goals>
+					<goal>howdy-world</goal>
+				</goals>
+				<phase>validate</phase>
+			</execution>
+		</executions>
+	</plugin>
+  
+  Artifact Ids of the format maven-___-plugin are reserved for 
+plugins in the Group Id org.apache.maven.plugins
+Please change your artifactId to the format ___-maven-plugin
+In the future this error will break the build.
+  
+  
+  mvn org.jrichardsz.plugins.maven:3rdparty-jars-maven-plugin:1.0-SNAPSHOT:installjars
+  
+  mvn org.jrichardsz.plugins.maven:3rdparty-jars-maven-plugin:1.0.0
+  
+steps:  
+  
+  mvn archetype:create -DgroupId=org.jrichardsz.plugins.maven -DartifactId=3rdparty-jars-maven-plugin -DarchetypeArtifactId=maven-archetype-mojo
+  
+  
+  ********* create a simple plugin
+  
+  mvn archetype:create -DgroupId=org.jrichardsz.plugins.maven -DartifactId=3rdparty-jars-maven-plugin -DarchetypeArtifactId=maven-archetype-mojo
+  
+  import maven project with eclipse
+  
+  mvn compile
+  mvn package
+  mvn install
+  
+  execute with CMD
+  
+  mvn org.jrichardsz.plugins.maven:3rdparty-jars-maven-plugin:1.0.0:<goal-name>
+  
+  as plugin of pom
+  
+  <plugin>
+				<groupId>org.jrichardsz.plugins.maven</groupId>
+				<artifactId>3rdparty-jars-maven-plugin</artifactId>
+				<version>1.0.0</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>touch</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+  
+  
+
+mvn -f C:\folder\000-ecomerce\subtask-025-sonar\ws\001\test-plugin\pom.xml org.jrichardsz.plugins.maven:3rdparty-jars-maven-plugin:1.0.0:execute
