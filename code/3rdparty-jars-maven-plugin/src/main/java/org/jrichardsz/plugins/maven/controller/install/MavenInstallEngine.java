@@ -61,7 +61,7 @@ public class MavenInstallEngine {
 
 	public static void main(String[] args) throws Exception {
 		
-		String command = "cmd /C mvn -f C:\\VerizonTasks\\000-ecomerce\\subtask-025-sonar\\ws\\001\\test-plugin\\pom.xml org.jrichardsz.plugins.maven:3rdparty-jars-maven-plugin:1.0.0:execute";
+		String command = "cmd /C mvn -f C:\\ws\\001\\test-plugin\\pom.xml org.jrichardsz.plugins.maven:3rdparty-jars-maven-plugin:1.0.0:execute";
 		execToString3(command);
 	}
 	
